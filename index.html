@@ -23,12 +23,24 @@
     padding: 0%;
     background-color: #19456a;
 }
-.top{
+div.myc_info{
     display: flex;
     justify-content: center;
     margin: auto;
-    
+    vertical-align: top;
+    display: inline-block;
+    text-align: center;
+    width: 425px;
 }
+.pledge{
+    display: block;
+    color: #90c8f7;
+    font-family: helvetica, Roboto, sans-serif;
+    font-weight: bolder;
+    font-style: oblique;
+    font-size: large;
+}
+
 .topinfo{
     display: flex;
     text-align: center;
@@ -41,17 +53,17 @@
 }
     
 #infocontainer{
-color: #c6d5e3;
-font-family: Roboto, sans-serif;
-font-weight: 400;
-line-height: 1.625;
-font-size: 1.6rem;
-box-sizing: border-box;
-background-color: #c6d5e3;
-height: 500px;
-border-radius: 20px;
-width: 400px;
-margin: auto;
+    color: #c6d5e3;
+    font-family: Roboto, sans-serif;
+    font-weight: 400;
+    line-height: 1.625;
+    font-size: 1.6rem;
+    box-sizing: border-box;
+    background-color: #c6d5e3;
+    height: 500px;
+    border-radius: 20px;
+    width: 400px;
+    margin: auto;
 
 }
 .info_box_style{
@@ -70,29 +82,83 @@ margin: auto;
     color: #236093;
     font-weight:lighter;
 }
+#second{
+    color: #19456a;
+    font-size:140%;
+}
+.donationbutton{
+    background-color: #8C0B42;
+    border: 1px solid;
+    border-color: #8C0B42;
+    color: white;
+    font-size: 16px;
+    padding: 12px 24px;
+    border-radius: 10px;
+    box-shadow:#19456a 10px;
+    text-decoration: double;
+}
+.site_footer{
+    background-color: white;
+    color: #0c0c0c;
+    font-size: 14px;
+    font-size: 1.4rem;
+    line-height: 1;
+    margin-top: 30px;
+    text-align: center;
+    height: 120px;
+    box-shadow: 0 50vh 0 50vh #ffffff;
+}
+.footer_container{
+    max-width: 509px;
+    max-height: 120
+}
+.sponsors{
+    align-content: space-between;
+    display: block;
+    max-width: 509px;
+    max-height: 120;
+}
+img{
+    max-width: 100px;
+    max-height: 100px;
+}
+
 </style>
 </head>
 <body class="body">
     <header class="site-header">
-        <div class="top">
-            <a href="https://app/mobilecause/com/i/3140/1io36h?utm_medium=text&utm_source=mc_t2d"><img src="myclogo.png"></a>
-            <p class=myc_text">Hello
-                
-            </p>
+        <div class="myc_info">
+            <a href="https://www.midcoastyouth.org//"><img src="myclogo.png" alt="mycpage"></a>
+            <span class="pledge">An incredibly generous donor has pledged<br>to match up to <span style="color: rgb(250, 246, 246)"><u>$15,000</u></span> in donations<br>received by the end of the year. Your donation of any amount will help us reach that goal!</span>
+            <br><br><span style="color: white">You can visit our website at <a href="https://www.midcoastyouth.org/">www.midcoastyouth.org</a><br> or donate online by clicking below!
         </div>
-
     </header>
 <div id="infocontainer">
     <div class="info_box_style">
         <p id="info_box_title">"15 to 30" Challenge</p>
             <p id="first">Help us turn $15K to $30K by making a donation of any amount by December 31st!</p>
-            <p id="second" >An incredibly generous donor has pledged to match up to $15,000 in donations received by the end of the year. Your donation of any amount will help us reach that goal!</p>
-            <p id="third">Join the Challenge!</p>
-            <p>Mail donations to:
-            MYC, 4 Old Brunswick Road, Bath ME 04530</p>
-            <button id="donationbutton">Donate Here!</button>
+            <p id="second">Join the Challenge!</p><br>
+            <a class="donationbutton" href="https://www.midcoastyouth.org/support/" button class="donationbutton">Donate Online Here</a><br><br>
+            <p>Mail donations to:<br>
+            MYC, 4 Old Brunswick Road,<br> Bath ME 04530</p>
+        </div>
     </div>
-    
 </div>
-</div>
+<footer class="site_footer">
+    <div class="footer_container">
+        <div class="sponsors">
+            <br>
+        <p>Thank you to our sponsors!</p>
+        <img src="midcoasthospital.png">
+        <img src="unitedway.png">
+        <img src="bathsavings.png">
+        <img src="avangrid.png">
+        <img src="bathrec.png">
+        <img src="northwoolwich.png">
+        <img src="bts.png">
+        <img src="mfcu.png">
+         </div>
+    </div>
+
+</footer>
 </body>
